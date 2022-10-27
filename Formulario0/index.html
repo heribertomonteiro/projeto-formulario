@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário Para Pesquisa Acadêmica</h1>
+        <p>Obrigado por responder este Formulário
+        </p>
+    </header>
+    <main>
+        <div class="menu">
+            <form action="">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Insira seu nome" class="caixadetexto"
+                        required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Insira seu email" class="caixadetexto"
+                        required>
+                </div>
+                <div>
+                    <label for="numero">Idade</label>
+                    <span>(opcional)</span>
+                    <input type="number" name="numero" placeholder="Insira sua idade" class="caixadetexto">
+                </div>
+                <div class="rolagem">
+                    <p>Atualmente, o que você faz da vida?</p>
+                    <select name="função" id="rolagem-form" required>
+                        <option disabled selected >Selecione sua função atual</option>
+                        <option value="estuda">Estuda</option>
+                        <option value="trabalhaTodoTempo">Trabalha em tempo integral</option>
+                        <option value="aprenderTodoTempo">Estuda em tempo integral</option>
+                        <option value="nãoOpina">Prefiro não responder</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="botao">
+                    <p>Você tem tempo para estudar?</p>
+                    <label><input type="radio" name="horario" value="sim" checked>Sim</label>
+                    <label><input type="radio" name= "horario" value="não">Não</label>
+                    <label><input type="radio" name="horario"value="semCerteza">Não tenho certeza</label>
+                </div>
+                <div class="rolagem">
+                    <p>Na sua opnião, qual o melhor horário para estudar?</p>
+                    <select name="horario" id="rolagem-form" required>
+                        <option disabled selected >Selecione uma opção</option>
+                        <option value="manhã">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <div class="botao">
+                    <p>Quais as matérias que você mais gosta? <span>(Marque todas que você gosta)</span></p>
+                    <label><input type="checkbox" value="matematica" name="matérias">Matemática</label>
+                    <label><input type="checkbox" value="portugues" name="matérias">Português</label>
+                    <label><input type="checkbox" value="historia" name="matérias">História</label>
+                    <label><input type="checkbox" value="geografia" name="matérias">Geografia</label>
+                    <label><input type="checkbox" value="ingles" name="matérias">Inglês</label>
+                    <label><input type="checkbox" value="espanhol" name="matérias">Espanhol</label>
+                    <label><input type="checkbox" value="filosofia" name="matérias">Fiilosofia</label>
+                    <label><input type="checkbox" value="sociologia" name="matérias">Sociologia</label>
+                    <label><input type="checkbox" value="informática" name="matérias">Informática</label>
+                    <label><input type="checkbox" value="outra" name="matérias">Outras</label>
+                </div>
+                <div>
+                    <p>Se você estuda outro tipo de matéria, informe no campo abaixo</p>
+                    <textarea name="comentarios" placeholder="Insira sua matéria aqui:"
+                        ></textarea>
+                </div>
+                <div class="enviar">
+                    <button type="submit">enviar</button>
+                </div>
+        </div>
+        </form>
+        </div>
+    </main>
+</body>
+
+</html>
